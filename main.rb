@@ -20,7 +20,7 @@ child_pid = fork do
 	command.call
 	
 	# This line appears to invalidate all constant cache...
-	M = Module.new
+	M = Module.new unless ENV['M']
 	
 	# ... causing this to invalidate all shared memory pages with the parent:
 	App.warmup
