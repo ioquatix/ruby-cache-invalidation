@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    console (1.15.3)
+      fiber-local
+    fiber-local (1.0.0)
+    mapping (1.1.1)
+    process-metrics (0.2.1)
+      console (~> 1.8)
+      samovar (~> 2.1)
+    samovar (2.1.4)
+      console (~> 1.0)
+      mapping (~> 1.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  process-metrics
+
+BUNDLED WITH
+   2.3.22
